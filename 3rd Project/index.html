@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Customer Self-Service Portal</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#claim-submission">File a Claim</a></li>
+        <li><a href="#claim-tracking">Track Claims</a></li>
+        <li><a href="#chatbot">Chatbot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Claim Submission -->
+  <section id="claim-submission">
+    <h2>File a New Claim</h2>
+    <form id="claimForm">
+      <label for="policyNumber">Policy Number:</label>
+      <input type="text" id="policyNumber" required>
+      
+      <label for="incidentDate">Incident Date:</label>
+      <input type="date" id="incidentDate" required>
+
+      <label for="incidentDescription">Incident Description:</label>
+      <textarea id="incidentDescription" required></textarea>
+
+      <label for="supportingDocuments">Supporting Documents:</label>
+      <input type="file" id="supportingDocuments" accept="image/*,.pdf">
+      
+      <button type="submit">Submit</button>
+    </form>
+    <p id="successMessage"></p>
+  </section>
+
+  <!-- Claim Tracking -->
+  <section id="claim-tracking">
+    <h2>Track Your Claims</h2>
+    <table id="claimsTable">
+      <thead>
+        <tr>
+          <th>Claim Number</th>
+          <th>Submission Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content will be inserted here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Chatbot -->
+  <section id="chatbot">
+    <h2>Chatbot Assistance</h2>
+    <iframe src="https://dialogflow-chatbot-url"></iframe>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

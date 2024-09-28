@@ -1,0 +1,62 @@
+
+
+.container {
+    background-color: rgb(240, 212, 212);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #06b620da; 
+    
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #0a0909;
+    padding: 10px;
+    text-align: center;
+}
+
+.chart-section {
+    margin-top: 20px;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+
+}
+
+.total-value {
+    margin-top: 20px;
+    text-align: center;
+}

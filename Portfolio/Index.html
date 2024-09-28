@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Portfolio</h1>
+
+        <!-- Add Investment Form -->
+        <div class="form-section">
+            <h2>Add New Investment</h2>
+            <form id="investment-form">
+                <input type="text" id="asset-name" placeholder="Asset Name" required>
+                <input type="number" id="amount-invested" placeholder="Amount Invested" required>
+                <input type="number" id="current-value" placeholder="Current Value" required>
+                <button type="submit">Add Investment</button>
+            </form>
+        </div>
+
+        <!-- Portfolio List -->
+        <div class="portfolio-section">
+            <h2>Your Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset Name</th>
+                        <th>Amount Invested</th>
+                        <th>Current Value</th>
+                        <th>% Change</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolio-list">
+                    <!-- Investments will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Total Portfolio Value -->
+        <div class="total-value">
+            <h3>Total Portfolio Value: <span id="total-value">$0</span></h3>
+        </div>
+
+        <!-- Pie Chart Section -->
+        <div class="chart-section">
+            <h2>Portfolio Distribution</h2>
+            <canvas id="portfolio-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
