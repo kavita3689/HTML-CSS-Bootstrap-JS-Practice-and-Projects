@@ -1,0 +1,17 @@
+ .container {
+    container: fluid;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 200px;
+    column-gap: 200px;
+    
+
+}
+.row{
+    background-color:blue;
+    
+}
+.col{
+    background-color: aqua;
+    
+}  
