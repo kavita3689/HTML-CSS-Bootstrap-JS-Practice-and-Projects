@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Event-driven Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .content {
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 300px;
+      margin: 20px auto;
+      background-color: #f9f9f9;
+      transition: background-color 0.3s ease;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button to Change Content</h1>
+
+  <div class="content" id="content">
+    This is the original content.
+  </div>
+
+  <button id="changeButton">Change Content</button>
+
+  <script>
+    // Get the elements by their ID
+    const contentDiv = document.getElementById("content");
+    const changeButton = document.getElementById("changeButton");
+
+    // Add an event listener to the button
+    changeButton.addEventListener("click", function() {
+      // Change the content and background color of the div
+      contentDiv.innerHTML = "The content has been changed!";
+      contentDiv.style.backgroundColor = "#e0f7fa";
+    });
+  </script>
+
+</body>
+</html>
